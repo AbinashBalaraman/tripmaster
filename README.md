@@ -13,7 +13,7 @@ A modern trip expense management and tracking application built with Next.js, Su
 
 ## 🚀 Live Demo
 
-**Production:** https://campacampa.netlify.app
+**Production:** [Your Netlify App URL]
 
 ## 🛠️ Tech Stack
 
