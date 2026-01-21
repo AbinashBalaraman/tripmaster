@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TripMaster 🚀
 
-## Getting Started
+A modern trip expense management and tracking application built with Next.js, Supabase, and Netlify.
 
-First, run the development server:
+## ✨ Features
+
+- 💰 **Expense Tracking** - Track all trip expenses by category
+- 👥 **Member Management** - Manage trip participants and contributions
+- 📊 **Visual Analytics** - Beautiful charts and insights
+- 🔄 **Real-time Sync** - Changes sync across all devices instantly
+- 📱 **Mobile Responsive** - Works perfectly on all devices
+- 🌙 **Dark Mode** - Eye-friendly dark theme
+
+## 🚀 Live Demo
+
+**Production:** https://campacampa.netlify.app
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 16 with App Router
+- **Database:** Supabase (PostgreSQL)
+- **Styling:** Tailwind CSS
+- **Charts:** Recharts
+- **Deployment:** Netlify
+- **State Management:** Zustand
+
+## 📦 Quick Start
 
 ```bash
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env.local
+# Add your Supabase credentials
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🗄️ Database Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Run the SQL scripts in order:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. `supabase/schema.sql` - Create tables
+2. `supabase/seed.sql` - Insert default data
 
-## Learn More
+See `supabase/README.md` for details.
 
-To learn more about Next.js, take a look at the following resources:
+## 🔧 Environment Variables
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Required in `.env.local`:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
 
-## Deploy on Vercel
+## 📝 Documentation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [`DEPLOYMENT.md`](DEPLOYMENT.md) - Deployment guide
+- [`supabase/README.md`](supabase/README.md) - Database documentation
+- [`GIT_GUIDE.md`](GIT_GUIDE.md) - Git workflow
+- [`NETLIFY_SETUP.md`](NETLIFY_SETUP.md) - CI/CD setup
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🤝 Contributing
+
+This is a personal project, but feel free to fork and customize!
+
+## 📄 License
+
+MIT
+
+---
+
+**Built with ❤️ for hassle-free trip management**
